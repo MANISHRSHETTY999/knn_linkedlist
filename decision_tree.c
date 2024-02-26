@@ -105,7 +105,9 @@ int main()
   head = insertNode(head, (double[]){1.5, 2.2}, 1);  
   head = insertNode(head, (double[]){3.2, 5.1}, 0);
   
-  double query[2] = {3.2, 4.1}; 
+  double query[2];
+  printf("enter the query points");
+  scanf("%lf%lf",&query[0],&query[1]);
   findKNN(head, query, 3);
 
   return 0;
